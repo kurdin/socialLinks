@@ -22,7 +22,11 @@ import ServiceTelephone from './service/Telephone';
 
 export default class SocialLinks {
     constructor(wrapper, opts = {}){
-        this.wrapper = wrapper;
+        if(wrapper instanceof HTMLElement){
+            this.wrapper = wrapper;
+        } else {
+            this.wrapper = document.querySelector(wrapper);
+        }
         
         this.params = {
             url: window.location.href,
