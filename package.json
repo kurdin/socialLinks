@@ -1,6 +1,6 @@
 {
   "name": "z-social-links",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A library to automagically generate social sharing links",
   "main": "src/SocialLinks.js",
   "scripts": {
